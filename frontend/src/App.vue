@@ -13,42 +13,38 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <main
-    class="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#0b3d2e] via-[#0f5c3b] to-[#1c8b45] px-4 py-12 text-[#0f3b2b]"
-  >
-    <section
-      class="w-full max-w-md rounded-2xl border border-white/20 bg-white/95 p-8 text-[#0f3b2b] shadow-[0_25px_50px_-12px_rgba(15,92,59,0.45)] backdrop-blur"
-    >
+  <main class="flex min-h-screen items-center justify-center bg-slate-900 px-4 py-12 text-slate-100">
+    <section class="w-full max-w-md rounded-2xl border border-slate-800 bg-slate-950/60 p-8 shadow-2xl shadow-slate-950/30 backdrop-blur">
       <header class="mb-8 text-center">
-        <h1 class="text-3xl font-bold tracking-tight text-[#0f5c3b]">Bienvenido</h1>
-        <p class="mt-2 text-sm text-[#4c8064]">Inicia sesión para continuar</p>
+        <h1 class="text-3xl font-bold tracking-tight">Bienvenido</h1>
+        <p class="mt-2 text-sm text-slate-400">Inicia sesión para continuar</p>
       </header>
       <form class="space-y-6" @submit.prevent="handleSubmit">
         <div class="space-y-2">
-          <label class="block text-sm font-medium text-[#1c6543]" for="username">Usuario</label>
+          <label class="block text-sm font-medium text-slate-300" for="username">Usuario</label>
           <input
             id="username"
             v-model="credentials.username"
             type="text"
             placeholder="Usuario"
-            class="w-full rounded-lg border border-[#bcdcc6] bg-[#f2faf4] px-4 py-3 text-sm text-[#124331] outline-none transition focus:border-[#6dbd44] focus:ring-2 focus:ring-[#6dbd44]/40"
+            class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-slate-100 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400/40"
             required
           />
         </div>
         <div class="space-y-2">
-          <label class="block text-sm font-medium text-[#1c6543]" for="password">Contraseña</label>
+          <label class="block text-sm font-medium text-slate-300" for="password">Contraseña</label>
           <input
             id="password"
             v-model="credentials.password"
             type="password"
             placeholder="********"
-            class="w-full rounded-lg border border-[#bcdcc6] bg-[#f2faf4] px-4 py-3 text-sm text-[#124331] outline-none transition focus:border-[#6dbd44] focus:ring-2 focus:ring-[#6dbd44]/40"
+            class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-slate-100 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400/40"
             required
           />
         </div>
         <button
           type="submit"
-          class="w-full rounded-lg bg-[#6dbd44] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#5aa636] focus:outline-none focus:ring-2 focus:ring-[#5aa636] focus:ring-offset-2 focus:ring-offset-white"
+          class="w-full rounded-lg bg-indigo-500 px-4 py-3 text-sm font-semibold text-white transition hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:ring-offset-2 focus:ring-offset-slate-950"
         >
           Iniciar sesión
         </button>
