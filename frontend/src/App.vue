@@ -37,7 +37,7 @@ const handleSubmit = () => {
             id="password"
             v-model="credentials.password"
             type="password"
-            placeholder="*"
+            placeholder="********"
             class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-4 py-3 text-sm text-slate-100 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400/40"
             required
           />
